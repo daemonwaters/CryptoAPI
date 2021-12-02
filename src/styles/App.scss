@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+@import './tools';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 40px;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+
+    h1{
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: $fw-heading;
+        font-size: $fs-heading-main;
+        margin: 0.5rem 0;
+    }
+}
+
+.input{
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+
+    input{
+        width: 100%;
+        outline: none;
+        padding: 0.5rem 2rem;
+        margin-left: 1rem;
+        border: solid 1px #666;
+        border-radius: 10px;
+
+        &::placeholder{
+            text-transform: capitalize;
+        }
+    }
+   
+}
+
+.table-container{
+    width: 80%;
+    height: 70vh;
+    border: solid 1px;
+    border-radius: 15px 0 15px 0;
+    background: $bg-table;
+    overflow-y: scroll;
+
+    .headings{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color:#fff;
+        padding: 0.5rem 1rem;
+        justify-content: space-around;
+
+        h2{
+            text-transform: uppercase;
+            font-weight: $fw-heading;
+            padding-left: 1.5rem;
+        }
+    }
+
+    .crypto-row{
+        display: flex;
+        padding: 0.5rem 1rem; 
+        width: 100%;
+        flex-direction: row;
+        color: $clr-text-table;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: solid 1px $clr-border;
+        cursor: pointer;
+
+        h3{
+            font-weight: $fw-text;
+            text-transform: capitalize;
+            text-align: center;
+            flex-basis: 100%;
+        }
+    }
+}
